@@ -32,7 +32,7 @@
               margin-top: 2vh;
               background-color: lightgreen;
               border-radius: 10px;
-              font-size: 28px;
+              font-size: 1.6rem;
               font-weight: 900;
               color: blueviolet;
               text-align: center;
@@ -49,7 +49,7 @@
             margin-top: 1vh;
             text-align: start;
             font-size: 25px;
-            animation-name: ovi;
+            /* animation-name: ovi; */
             animation-duration: 10s;
             animation-delay: 1s;
             animation-iteration-count: infinite;
@@ -64,6 +64,9 @@
             border: 1px solid black;
             margin-left: 3vw;
             margin-top: 2vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
 
 
         }
@@ -84,6 +87,117 @@
                 transform: translateX(-100vw);
             }
         }
+        .item{
+            width: 38vw;
+            height: 30vh;
+            border: 1px solid black;
+            margin-top: 1vh;
+            margin-left: 6vw;
+            overflow: hidden;
+            background-color: rgb(226, 226, 101);
+        }
+        .details{
+            width: 30vw;
+            height: 6vh;
+            border: 1px solid black;
+            margin-top: 1vh;
+            margin-left: 10vw;
+        }
+        .de{
+            margin-left: 15vw;
+        }
+     .sw{
+        width: 30vw;
+        height: 3vh;
+        border: 1px solid black;
+        margin-left: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5vh;
+        background-color: yellow;
+        
+     }
+     .swe{
+        margin-left: 15vw;
+     }
+     .bt{
+        width: 10vw;
+        height: 2.6vh;
+        border: 1px solid black;
+        margin-top: 0.1vh;
+        margin-left: 3vw;
+        cursor: pointer;
+        
+     }
+     #bt11{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+     #bt21{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+#bt31{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+     #bt41{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+     #bt51{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+     #bt61{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+     #bt71{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+
+
+     #bt12{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+
+      #bt22{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt32{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt42{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt52{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt62{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+
+     .nb{
+        width: 117vw;
+        height: 28vh;
+        border: 1px solid black;
+        margin-top: 1vh;
+        background-color: lightgray;
+        /* transform: translateX(-39vw); */
+        
+     }
+     .p{
+        width: 38vw;
+        height: 28vh;
+     }
     </style>
 </head>
 <body>
@@ -93,13 +207,55 @@
       </div>
       <div id="top1"> Note BOOK Collection</div>
       <div id="middle">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
-        <div class="box" id="box4></div>
-        <div class="box" id="box5></div>
-        <div class="box" id="box6></div>
+        <div id="item1" class="item">
+           <div id="nb1" class="nb">
+            <img src="Photo11.jpg" alt="" id="p11" class="p">
+              <img src="photo 12.jpg" alt="" id="p12" class="p">
+               <img src="photo13.jpg" alt="" id="p13" class="p">
+          
+           </div>
+        </div>
+        <div id="item2" class="item">
+         
+        </div>
+        <div id="sw1" class="sw">
+            <div class="bt" id="bt11"></div>
+            <div class="bt" id="bt12"></div>
+        </div>
+        <div id="sw2" class="sw swe">
+            <div class="bt" id="bt21"></div>
+            <div class="bt" id="bt22"></div>
+        </div>
+        <div class="details" id="detail1" ></div>
+        <div class="details de" id="detail2" ></div>
+        <div id="item3" class="item"></div>
+        <div id="item4" class="item"></div>
+         <div id="sw3" class="sw">
+            <div class="bt" id="bt31"></div>
+            <div class="bt" id="bt32"></div>
+         </div>
+        <div id="sw4" class="sw swe">
+            <div class="bt" id="bt41"></div>
+            <div class="bt" id="bt42"></div>
+        </div>
+        <div class="details" id="detail3"></div>
+        <div class="details de" id="detail4" ></div>
+        <div id="item5" class="item"></div>
+        <div id="item6" class="item"></div>
+          <div id="sw5" class="sw">
+            <div class="bt" id="bt51"></div>
+            <div class="bt" id="bt52"></div>
+          </div>
+        <div id="sw6" class="sw swe">
+            <div class="bt" id="bt61"></div>
+            <div class="bt" id="bt62"></div>
+        </div>
+        <div class="details" id="detail5"></div>
+        <div class="details de" id="detail6"></div>
       </div>
     </div>
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
