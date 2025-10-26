@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            background-color: bisque;
+        }
         #container{
             width: 100vw;
             height: 300vh;
             /* border: 2px solid black; */
+            background-color: rgb(233, 180, 111);
 
         }
         #top{
@@ -49,7 +53,7 @@
             margin-top: 1vh;
             text-align: start;
             font-size: 25px;
-             animation-name: ovi; 
+            /* animation-name: ovi; */
             animation-duration: 10s;
             animation-delay: 1s;
             animation-iteration-count: infinite;
@@ -67,7 +71,9 @@
             display: flex;
             flex-wrap: wrap;
             align-content: start;
-
+            /* transform: scaleX(1.1); */
+            background-color: rgb(241, 79, 79);
+            border-radius: 10px;
 
         }
         @keyframes ovi{
@@ -98,11 +104,56 @@
         }
         .details{
             width: 30vw;
-            height: 6vh;
+            height: 9vh;
             border: 1px solid black;
             margin-top: 1vh;
             margin-left: 10vw;
+            display: flex;
+            flex-wrap:wrap;
+            background-color: lightsalmon;
         }
+        .prf{
+            width: 8vw;
+            height: 3vh;
+            border: 1px solid black;
+            /* margin: auto; */
+            margin-top: 2px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: center;
+            background-color: rgb(194, 232, 194);
+            color: rgb(43, 9, 75);
+            text-decoration: line-through;
+        }
+      .pr{
+            width: 8vw;
+            height: 4vh;
+            border: 1px solid black;
+            /* margin: auto; */
+            margin-top: 2px;
+            margin-left: 1rem;
+            font-size: 1.2rem;
+            font-weight: 1000;
+            text-align: center;
+            background-color: rgb(194, 232, 194);
+            color: rgb(43, 9, 75);
+         
+        }
+        .c{
+            width: 27vw;
+            height: 4vh;
+            border: 1px solid black;
+            margin: auto;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: blue;
+            background-color: aqua;
+            border-radius: 3px;
+            margin: 0;
+            padding: 0;
+        }
+
         .de{
             margin-left: 15vw;
         }
@@ -157,6 +208,19 @@
         clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
         background-color:brown;
      }
+     #bt81{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+      #bt91{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+      #bt101{
+        clip-path:  polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        background-color:brown;
+     }
+
 
 
      #bt12{
@@ -184,6 +248,23 @@
         clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
         background-color: brown;        
      }
+      #bt72{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt82{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt92{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+      #bt102{
+        clip-path: polygon(60% 0%, 60% 20%, 0% 20%, 0% 80%, 60% 80%, 60% 100%, 100% 50%);
+        background-color: brown;        
+     }
+     
 
      .nb{
         width: 117vw;
@@ -194,10 +275,22 @@
         /* transform: translateX(-39vw); */
         
      }
+     #nb7{
+        width: 195vw;
+     }
+     #nb10{
+        width: 156vw;
+     }
      .p{
         width: 38vw;
         height: 28vh;
      }
+     /* #nb8{
+           opacity: 0;
+     }
+     #item8{
+        opacity: 0;
+     } */
     </style>
 </head>
 <body>
@@ -210,13 +303,17 @@
         <div id="item1" class="item">
            <div id="nb1" class="nb">
             <img src="Photo11.jpg" alt="" id="p11" class="p">
-              <img src="Photo 12.jpg" alt="" id="p12" class="p">
+              <img src="photo 12.jpg" alt="" id="p12" class="p">
                <img src="photo13.jpg" alt="" id="p13" class="p">
           
            </div>
         </div>
         <div id="item2" class="item">
-         
+         <div class="nb" id="nb2">
+            <img src="photo 21.jpg" alt="" id="p21" class="p">
+             <img src="photo22.jpg" alt="" id="p22" class="p">
+              <img src="photo23.jpg" alt="" id="p23" class="p">
+         </div>
         </div>
         <div id="sw1" class="sw">
             <div class="bt" id="bt11"></div>
@@ -226,10 +323,32 @@
             <div class="bt" id="bt21"></div>
             <div class="bt" id="bt22"></div>
         </div>
-        <div class="details" id="detail1" ></div>
-        <div class="details de" id="detail2" ></div>
-        <div id="item3" class="item"></div>
-        <div id="item4" class="item"></div>
+        <div class="details" id="detail1" >
+             <div class="prf" id="prf1">₹80</div>
+            <div class="pr" id="pr1">₹75</div>
+            <div class="c" id="c1">Math</div>
+        </div>
+        <div class="details de" id="detail2" >
+               <div class="prf" id="prf2">₹80</div>
+            <div class="pr" id="pr2">₹75</div>
+            <div class="c" id="c2">MAth Eng Ben</div>
+        </div>
+        <div id="item3" class="item">
+            <div id="nb3" class="nb">
+                <img src="photo31.jpg" alt="" class="p" id="p31">
+                <img src="photo32.jpg" alt="" class="p" id="p32">
+                <img src="photo33.jpg" alt="" class="p" id="p33">
+
+            </div>
+        </div>
+        <div id="item4" class="item">
+            <div id="nb4" class="nb">
+                <img src="photo41.jpg" alt="" class="p" id="p41">
+                 <img src="photo42.jpg" alt="" class="p" id="p42">
+                  <img src="photo43.jpg" alt="" class="p" id="p44">
+                 
+            </div>
+        </div>
          <div id="sw3" class="sw">
             <div class="bt" id="bt31"></div>
             <div class="bt" id="bt32"></div>
@@ -238,10 +357,32 @@
             <div class="bt" id="bt41"></div>
             <div class="bt" id="bt42"></div>
         </div>
-        <div class="details" id="detail3"></div>
-        <div class="details de" id="detail4" ></div>
-        <div id="item5" class="item"></div>
-        <div id="item6" class="item"></div>
+        <div class="details" id="detail3">
+             <div class="prf" id="prf3">₹80</div>
+            <div class="pr" id="pr3">₹75</div>
+            <div class="c" id="c3">Math</div>
+        </div>
+        <div class="details de" id="detail4" >
+             <div class="prf" id="prf4">₹80</div>
+            <div class="pr" id="pr4">₹75</div>
+            <div class="c" id="c4">Math</div>
+        </div>
+        <div id="item5" class="item">
+            <div id="nb5" class="nb">
+                <img src="photo51.jpg" alt="" class="p" id="p51">
+                <img src="photo52.jpg" alt="" class="p" id="p52">
+                <img src="photo53.jpeg" alt="" class="p" id="p53">
+                
+            </div>
+        </div>
+        <div id="item6" class="item">
+            <div id="nb6" class="nb">
+                <img src="photo61.jpg" alt="" class="p" id="p61">
+                <img src="photo62.jpg" alt="" class="p" id="p62">
+                <img src="photo63.jpg" alt="" class="p" id="p63">
+             
+            </div>
+        </div>
           <div id="sw5" class="sw">
             <div class="bt" id="bt51"></div>
             <div class="bt" id="bt52"></div>
@@ -250,8 +391,92 @@
             <div class="bt" id="bt61"></div>
             <div class="bt" id="bt62"></div>
         </div>
-        <div class="details" id="detail5"></div>
-        <div class="details de" id="detail6"></div>
+        <div class="details" id="detail5">
+             <div class="prf" id="prf5">₹80</div>
+            <div class="pr" id="pr5">₹75</div>
+            <div class="c" id="c5">Math</div>
+        </div>
+        <div class="details de" id="detail6">
+             <div class="prf" id="prf6">₹80</div>
+            <div class="pr" id="pr6">₹75</div>
+            <div class="c" id="c6">Math</div>
+        </div>
+
+         <div id="item7" class="item">
+            <div id="nb7" class="nb">
+                <img src="photo71.jpg" alt="" class="p" id="p71">
+                <img src="photo72.jpg" alt="" class="p" id="p72">
+                <img src="photo73.jpg" alt="" class="p" id="p73">
+                <img src="photo74.jpg" alt="" class="p" id="p74">
+                <img src="photo75.jpg" alt="" class="p" id="p75">
+               
+            </div>
+        </div>
+        <div id="item8" class="item">
+            <div id="nb8" class="nb">
+                <img src="photo81.jpg" alt="" class="p" id="p81">
+                <img src="photo82.jpg" alt="" class="p" id="p82">
+                <img src="photo83.jpg" alt="" class="p" id="p83">
+                </div>
+            </div>
+            <div id="sw7" class="sw">
+            <div class="bt" id="bt71"></div>
+            <div class="bt" id="bt72"></div>
+        </div>
+           <div id="sw8" class="sw swe">
+            <div class="bt" id="bt81"></div>
+            <div class="bt" id="bt82"></div>
+        </div>
+        <div class="details" id="detail7">
+             <div class="prf" id="prf7">₹80</div>
+            <div class="pr" id="pr7">₹75</div>
+            <div class="c" id="c7">Math</div>
+        </div>
+        <div class="details de" id="detail8">
+             <div class="prf" id="prf8">₹80</div>
+            <div class="pr" id="pr8">₹75</div>
+            <div class="c" id="c8">Math</div>
+        </div>
+
+
+          <div id="item9" class="item">
+            <div id="nb9" class="nb">
+                <img src="photo91.jpg" alt="" class="p" id="p91">
+                <img src="photo92.jpg" alt="" class="p" id="p92">
+                <img src="photo93.jpg" alt="" class="p" id="p93">
+             
+            </div>
+        </div>
+        <div id="item10" class="item">
+            <div id="nb10" class="nb">
+                <img src="photo101.jpg" alt="" class="p" id="p101">
+                <img src="photo102.jpg" alt="" class="p" id="p102">
+                <img src="photo103.jpg" alt="" class="p" id="p103">
+                <img src="photo104.jpg" alt="" class="p" id="p104">
+                </div>
+            </div>
+            <div id="sw9" class="sw">
+            <div class="bt" id="bt91">
+                
+            </div>
+            <div class="bt" id="bt92"></div>
+        </div>
+           <div id="sw10" class="sw swe">
+            <div class="bt" id="bt101"></div>
+            <div class="bt" id="bt102"></div>
+        </div>
+        <div class="details" id="detail9">
+             <div class="prf" id="prf9">₹80</div>
+            <div class="pr" id="pr9">₹75</div>
+            <div class="c" id="c9">Math</div>
+        </div>
+        <div class="details de" id="detail10">
+             <div class="prf" id="prf10">₹80</div>
+            <div class="pr" id="pr10">₹75</div>
+            <div class="c" id="c10">Math</div>
+        </div>
+
+
       </div>
     </div>
 
@@ -259,6 +484,3 @@
     <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
